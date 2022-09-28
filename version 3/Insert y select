@@ -1,0 +1,68 @@
+--INSERTAR DATOS TABLA tipo_documento
+
+insert into tipo_documento(id_tipo,nombre) values (1,'Cedula Ciudadania');
+insert into tipo_documento(id_tipo,nombre) values (2,'Cedula Extranjeria');
+insert into tipo_documento(id_tipo,nombre) values (3,'NIT');
+insert into tipo_documento(id_tipo,nombre) values (4,'Registro Civil');
+insert into tipo_documento(id_tipo,nombre) values (5,'Tarjeta de Identidad');
+
+----INSERTAR DATOS TABLA roles
+insert into roles(id_roles,nombre) values (1,'Administrador STC');
+insert into roles(id_roles,nombre) values (2,'Soporte STC');
+insert into roles(id_roles,nombre) values (3,'Cliente');
+
+----INSERTAR DATOS TABLA genero
+insert into genero(id_genero,nombre) values (1,'Masculino');
+insert into genero(id_genero,nombre) values (2,'Femenino');
+
+----INSERTAR DATOS TABLA sistema_monitoreo
+insert into sistema_monitoreo(id_sistema,nombre,descripcion) values (1,'Hikvision','');
+insert into sistema_monitoreo(id_sistema,nombre,descripcion) values (2,'Dahua','');
+insert into sistema_monitoreo(id_sistema,nombre,descripcion) values (3,'Hilook','');
+
+
+----INSERTAR DATOS TABLA  productos
+insert into productos(id_producto,nombre,tipo,precio,descripcion,cantidad,estado) values (10001,'Camara Hilook','Domo','200000.22','Camara de seguridad y vigilancia',1000,'Disponible');
+insert into productos(id_producto,nombre,tipo,precio,descripcion,cantidad,estado) values (10002,'Camara Dahua','Bala','1800000.22','Camara de seguridad y vigilancia',500,'Disponible');
+insert into productos(id_producto,nombre,tipo,precio,descripcion,cantidad,estado) values (10003,'Camara Hikvision','Bombillo','2500000.22','Camara de seguridad y vigilancia',1000,'Disponible');
+
+
+----INSERTAR DATOS TABLA  combos
+
+insert into combos(id_combos,id_producto,id_sistema,descripcion) values (1,'10001','3','Combo Camara Hilook');
+insert into combos(id_combos,id_producto,id_sistema,descripcion) values (2,'10002','2','Combo Camara Dahua');
+insert into combos(id_combos,id_producto,id_sistema,descripcion) values (3,'10003','1','Combo Camara Hikvision');
+
+----INSERTAR DATOS TABLA  Usuario
+insert into usuarios(id_usuarios,nombres,apellidos,id_genero,id_roles,correo,contraseña,edad,id_tipo,documento) values (1000,'Roberto Andres','Carlos',1,3,'robertocarlo@hotmail.com','*********',41,1,'1001357895');
+insert into usuarios(id_usuarios,nombres,apellidos,id_genero,id_roles,correo,contraseña,edad,id_tipo,documento) values (1001,'Mario Andres','Castillo',1,2,'mario@hotmail.com','*********',25,1,'1002458975');
+insert into usuarios(id_usuarios,nombres,apellidos,id_genero,id_roles,correo,contraseña,edad,id_tipo,documento) values (1002,'Pablo','Ortega',1,1,'gatita444@hotmail.com','*********',28,1,'1006784986');
+
+
+----INSERTAR DATOS TABLA  Contrato
+insert into contrato(id_contrato,id_usuario,nombre,documento,id_producto,id_combos,fecha_inicio,fecha_fin,descripcion) values (10001,1002,'Rodrigo Menetez','111289844',10001,1,'08/09/2022','08/12/2022','VENTA COMBO CONTRATO 10001 FINALIZADO');
+
+
+----INSERTAR DATOS TABLA  gestion_instalacion
+insert into gestion_instalacion(id_gestion,id_usuario,fecha_instalacion,observacion) values (1,1002,'12/09/2022','SE LE GENERA INTALACION CORRECTAMEMTE DEJANDO FUNCIONAMIENTO OK');
+
+
+----INSERTAR DATOS TABLA  pedidos
+insert into pedidos(id_pedido,id_usuario,nombre,direccion,ciudad,telefono,id_productos,id_combos,fecha_entrega) values (1,1002,'Rodrigo Menetez','Cll 63 61-25 Piso 2', 'Bogota','+576012235898',10001,1,'12/09/2022');
+
+
+
+--SELECTS
+select * from combos;
+select * from contrato;
+select * from genero;
+select * from gestion_instalacion;
+select * from pedidos;
+select * from productos;
+select * from roles;
+select * from sistema_monitoreo;
+select * from tipo_documento;
+select * from usuarios;
+
+
+

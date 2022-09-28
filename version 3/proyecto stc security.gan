@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-08-08" view-index="0" gantt-divider-location="359" resource-divider-location="300" version="3.2.3230" locale="es_ES">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="205" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="76" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="77" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <timeline>
+            <![CDATA[12,13,10,11,14]]>
+        </timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Levantamiento de informacion SECUTIRY S.A.S" color="#8cb6ce" meeting="false" start="2021-10-20" duration="5" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <notes>
+                <![CDATA[Se realiza el levantamiento de informacion para el proyecto SECURITY S.A.S con la entrevista]]>
+            </notes>
+        </task>
+        <task id="1" name="Diagrama de procesos" color="#8cb6ce" meeting="false" start="2021-10-29" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        <task id="2" name="Sistema de control de versiones" color="#8cb6ce" meeting="false" start="2021-11-10" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <notes>
+                <![CDATA[Se obtiene la herramienta para el control de veriones]]>
+            </notes>
+        </task>
+        <task id="3" name="Presentacion primer trimestre" color="#8cb6ce" meeting="false" start="2021-12-14" duration="1" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <notes>
+                <![CDATA[Se realiza presentacion primer trimestre proyecto]]>
+            </notes>
+        </task>
+        <task id="4" name="Diagrama casos de uso" color="#8cb6ce" meeting="false" start="2022-02-24" duration="4" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <notes>
+                <![CDATA[Se generan los casos de uso del proyecto 27 no se trabaja porque es Domingo]]>
+            </notes>
+        </task>
+        <task id="5" name="Casos de uso extendido" color="#8cb6ce" meeting="false" start="2022-03-07" duration="3" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        <task id="6" name="Modelo entidad relación" color="#8cb6ce" meeting="false" start="2022-03-14" duration="4" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        <task id="7" name="Diccionario de datos" color="#8cb6ce" meeting="false" start="2022-03-21" duration="2" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        <task id="8" name="Cronograma de actividades" color="#8cb6ce" meeting="false" start="2022-03-28" duration="3" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+            <notes>
+                <![CDATA[Se genera el cronograma gantt de actividades]]>
+            </notes>
+        </task>
+        <task id="9" name="Presupuesto y personal" color="#8cb6ce" meeting="false" start="2022-04-01" duration="4" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        <task id="10" name="Diagrama de clase" color="#8cb6ce" meeting="false" start="2022-04-18" duration="10" complete="0" thirdDate="2022-04-01" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="Prototipos mockups" color="#8cb6ce" meeting="false" start="2022-05-02" duration="15" complete="0" thirdDate="2022-04-13" thirdDate-constraint="0" expand="true"/>
+        <task id="12" name="Modelo de entidad de relacion" color="#8cb6ce" meeting="false" start="2022-05-27" duration="11" complete="0" thirdDate="2022-04-27" thirdDate-constraint="0" expand="true"/>
+        <task id="13" name="Diagrama de distribiucion" color="#8cb6ce" meeting="false" start="2022-06-20" duration="10" complete="0" thirdDate="2022-05-30" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="Informes de costos del proyecto" color="#8cb6ce" meeting="false" start="2022-08-09" duration="20" complete="0" thirdDate="2022-07-11" thirdDate-constraint="0" expand="false"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Julian Cubides" function="Default:0" contacts="jdcubides7@misena.edu.co" phone=""/>
+        <resource id="1" name="Pablo Ortega" function="Default:0" contacts="paotrega@misena.edu.co" phone=""/>
+        <resource id="2" name="Jonathan Leon" function="Default:0" contacts="stivenlion06@gmail.com " phone=""/>
+        <resource id="3" name="Oscar Oyola" function="Default:0" contacts="ofoyola@misena.edu.co" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="3" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
